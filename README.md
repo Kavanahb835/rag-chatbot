@@ -3,7 +3,7 @@
 A RAG (Retrieval-Augmented Generation) based document chatbot that answers questions from your own PDF documents using LangChain, FAISS, and Streamlit.
 
 ## Live Demo
-[Click here to try the chatbot](#) <!-- Add your Streamlit Cloud link here after deployment -->
+[Click here to try the chatbot](https://rag-chatbot-dksf8fszfpebmyxxnytwxt.streamlit.app/) <!-- Add your Streamlit Cloud link here after deployment -->
 
 ## What it does
 Upload any PDF document and ask questions about it. The chatbot finds the most relevant sections from your document and generates accurate answers using a free LLM.
