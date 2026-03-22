@@ -1,4 +1,4 @@
-
+import os
 import streamlit as st
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
@@ -6,7 +6,13 @@ from transformers import pipeline
 
 st.set_page_config(page_title="RAG Chatbot", page_icon="🤖")
 st.title("RAG Document Chatbot")
-st.write("Ask questions based on your uploaded documents")
+st.write("Ask questions based on your Virtual Trial Room project")
+
+if not os.path.exists("faiss_index"):
+    st.info("Building knowledge base... please wait 1-2 mins")
+    from ingest import create_vector_store
+    create_vector_store()
+    st.success("Knowledge base ready!")
 
 @st.cache_resource
 def load_db():
