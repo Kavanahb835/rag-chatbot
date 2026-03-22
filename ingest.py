@@ -1,4 +1,3 @@
-
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.embeddings import HuggingFaceEmbeddings
@@ -31,5 +30,3 @@ def create_vector_store():
     db = FAISS.from_documents(chunks, embeddings)
     db.save_local("faiss_index")
     print("Done! FAISS index saved successfully!")
-
-create_vector_store()
