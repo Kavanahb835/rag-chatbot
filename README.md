@@ -51,4 +51,4 @@ streamlit run app.py
 MCA Graduate | AWS Certified | Software Developer
 Bangalore University
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://www.linkedin.com/in/kavana-hb-680525345)
+[LinkedIn Profile](https://www.linkedin.com/in/kavana-hb-680525345)
